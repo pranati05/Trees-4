@@ -25,7 +25,7 @@ class Solution:
             if node:
                 if visited:
                     k -= 1
-                    if count == k:
+                    if k == 0:
                         return node.val
                 else:
                     stack.append((node.right, False))
